@@ -5,9 +5,10 @@ function Scene () {
 	for (var i = 0; i < 2; i++) {
 		this.attractors.push(new attractor(createVector(width/2 - 350 + (i * 700), height/2)));	
 	}
-
+	
+	var temp = random(350);
 	for (var i = 0; i < 250; i++) {
-		this.particles.push(new particle(createVector(width/2 - 150, height/2)));
+		this.particles.push(new particle(createVector(width/2 - 200 + temp, height/2)));
 	}
 }
 
