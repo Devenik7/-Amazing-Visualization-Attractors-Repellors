@@ -2,12 +2,12 @@ function Scene () {
 	this.attractors = [];
 	this.particles = [];
 
-	for (var i = 0; i < 0; i++) {
-		this.attractors.push(new attractor());	
+	for (var i = 0; i < 2; i++) {
+		this.attractors.push(new attractor(createVector(width/2 - 350 + (i * 700), height/2)));	
 	}
 
 	for (var i = 0; i < 250; i++) {
-		this.particles.push(new particle(createVector(width/2 + 200 * cos((i/250) * (PI /180)), height/2 + 200 * sin((i/250) * (PI /180)))));
+		this.particles.push(new particle(createVector(width/2 - 150, height/2)));
 	}
 }
 
