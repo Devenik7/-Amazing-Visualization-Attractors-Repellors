@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function Scene () {
 	this.attractors = [];
 	this.particles = [];
@@ -47,11 +46,12 @@ function Scene () {
 	this.particles = [];
 
 	for (var i = 0; i < 2; i++) {
-		this.attractors.push(new attractor(createVector(width/2 - 350 + (i * 700), height/2)));	
+		this.attractors.push(new attractor(createVector(width/2 - 350 + (i * 700), height/2 - 100)));	
 	}
-
+	
+	var temp = random(400);
 	for (var i = 0; i < 250; i++) {
-		this.particles.push(new particle(createVector(width/2 - 150, height/2)));
+		this.particles.push(new particle(createVector(width/2 - 200 + temp, height/2)));
 	}
 }
 
@@ -83,5 +83,4 @@ Scene.prototype.show = function() {
 
 Scene.prototype.addAttractor = function(pos) {
 	this.attractors.push(new attractor(pos));
->>>>>>> 306202bc563b72637cf83aaf76d1167593132b36
 };
