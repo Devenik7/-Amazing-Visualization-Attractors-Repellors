@@ -40,7 +40,7 @@ Scene.prototype.show = function() {
 
 Scene.prototype.addAttractor = function(pos) {
 	this.attractors.push(new attractor(pos));
-=======
+
 function Scene () {
 	this.attractors = [];
 	this.particles = [];
